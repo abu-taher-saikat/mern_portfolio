@@ -1,0 +1,36 @@
+@import "../index.scss";
+
+.projects {
+  font-family: var(--heboo);
+  width: 85%;
+  margin: 0 auto;
+
+  .menu {
+    .title {
+      text-align: center;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      .project-filter-btn {
+        border: none;
+        padding: 1em;
+        margin: 1em 0.5em;
+      }
+    }
+
+    .section-center {
+      display: grid;
+      grid-template-columns: repeat(12, 1rf);
+
+      .card {
+        width: 50%;
+        border: 1px solid black;
+        .photo {
+          height: 200px;
+        }
+      }
+    }
+  }
+}

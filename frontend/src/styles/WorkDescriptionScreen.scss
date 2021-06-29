@@ -1,0 +1,30 @@
+@import '../index.scss';
+
+
+.workDescription{
+    font-family: var(--heboo);
+    .container{
+        width: 95%;
+        margin: 0 auto;
+        h1{
+            @include herotext;
+        }
+
+        .time-and-category{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .time{
+                background-color: var(--primay);
+                font-weight: bold;
+                border-radius: 25px;
+                padding: .3em .9em;
+                display: inline-block;
+            }
+            .category{
+                padding: 1em;
+
+            }
+        }
+    }
+}

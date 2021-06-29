@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box !important;
+}
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primay: #ff6464;
+  --secondary: #00a8cc;
+  --dark: #21243d;
+  --light: #8695a4;
+  --heboo: "Heebo", sans-serif;
+}
+
+// h1 {
+//   @include heading-font;
+// }
+
+@mixin heading-font {
+  font-size: 22px;
+  color: var(--dark);
+  line-height: 30px;
+  font-weight: 700;
+  padding: 0.5em 0;
+}
+
+@mixin paragraph-font {
+  family: Heebo;
+  style: Regular;
+  size: 16px;
+  height: 24px;
+  height: 100%;
+}
+
+@mixin herotext {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 1em 0;
+  font-weight: bold;
+}
